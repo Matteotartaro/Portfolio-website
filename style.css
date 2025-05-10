@@ -216,7 +216,7 @@ body {
 
 @media (max-width: 767px) {
   #menu-check:checked + .menu-pill {
-    height: 70vh;
+    height: 75vh;
   }
 }
 
