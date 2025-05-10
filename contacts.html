@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  ></meta>
+
+  <title>Contacts</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  >
+</link>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+
+
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Titan+One&display=swap');
+
+  </style>
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init("hfTNmDMdOVk-Z91ff"); 
+  })();
+</script>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    emailjs.sendForm('service_7nljpjg', 'template_fnoabjk', this)
+      .then(function() {
+        alert('Messaggio inviato con successo!');
+      }, function(error) {
+        alert('Errore: ' + JSON.stringify(error));
+      });
+  });
+</script>
+
+</head>
+<body class="contacts-page">
+    <script>
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"
+      </script>
+
+
+
+
+
+
+
+
+
+<div class="rotating-text-contacts">
+  <svg viewBox="0 0 300 300">
+    <defs>
+      <path id="circlePath" d="M150,150 m-100,0 a100,100 0 1,1 200,0 a100,100 0 1,1 -200,0" />
+    </defs>
+    <text class="text-circle">
+      <textPath href="#circlePath" startOffset="0%">
+        CONTACTS • CONTACTS • CONTACTS • 
+      </textPath>
+    </text>
+  </svg>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="contacts-content d-flex flex-column flex-md-row">
+
+    <!-- Sezione 1: Titolo -->
+    <section class="title-section d-flex align-items-center justify-content-center">
+      <div class="chat-title">LET'S HAVE <br> A CHAT!</div>
+    </section>
+  
+    <!-- Sezione 2: Form -->
+    <section class="form-section d-flex align-items-center justify-content-center">
+      <div class="form-container">
+        <form id="contact-form">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" name="mail" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Your Message" name="message" required></textarea>
+          </div>
+          <div class="text-end">
+            <button type="submit" class="submit-button">Send Message</button>
+          </div>
+        </form> 
+        <div class="container text-center follow-container">
+        <h2 class="social-title mb-3">Social</h2>
+        <div class="row g-3 justify-content-center">
+          <div class="col-4 col-md-3">
+            <a href="https://www.instagram.com/matteotartaro/" target="_blank" class="social-card">Instagram</a>
+          </div>
+          <div class="col-4 col-md-3">
+            <a href="#" class="social-card">LinkedIn</a>
+          </div>
+          <div class="col-4 col-md-3">
+            <a href="https://github.com/Matteotartaro" target="_blank" class="social-card">GitHub</a>
+          </div>
+        </div>
+      </div>
+      </div>
+     
+      
+    </section>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="checkbox" id="menu-check" hidden>
+
+        <div class="container menu-pill">
+      
+          <span class="welcome-text">Carrier pidgeons also accepted!</span>
+      
+      <!--BOTTONI-->
+          <label class="menu-btn" for="menu-check"> Menu 
+              <span class="material-icons">
+                  arrow_outward
+                  </span>
+          </label>
+      
+          <label class="close-btn" for="menu-check">
+              <span class="material-icons">
+                  close
+                  </span>
+            </label>
+
+          
+
+        
+      
+      
+      <!-- Contenuto menù aperto -->
+      <div class="menu-content px-3">  
+        
+        <div class="back-home-btn mt-auto">
+                <a href="index.html" class="btn btn-dark">Soft light, warm blanket... Back Home </a>
+              </div>
+
+          <h2 class="mb-4 fw-bold">Mildly impressive content ahead</h2>
+        
+          <a href="about.html" class="d-flex align-items-center p-3 rounded-4 menu-item text-decoration-none text-dark">
+            <img src="foto/a.png" alt="About" class="menu-item-img me-3 rounded-3">
+            <span class="menu-item-text">About Me</span>
+          </a>
+      
+      
+          <hr>
+        
+      
+          <a href="projects.html" class="d-flex align-items-center p-3 rounded-4 menu-item text-decoration-none text-dark">
+            <img src="foto/P.png" alt="Projects" class="menu-item-img me-3 rounded-3">
+            <span class="menu-item-text">Projects</span>
+          </a>
+      
+      
+          <hr>
+        
+      
+          <a href="contacts.html" class="d-flex align-items-center p-3 rounded-4 menu-item text-decoration-none text-dark">
+            <img src="foto/c.png" alt="Contacts" class="menu-item-img me-3 rounded-3">
+            <span class="menu-item-text">Contacts</span>
+          </a>
+      
+        </div>
+
+
+      </body>
+      </html>
