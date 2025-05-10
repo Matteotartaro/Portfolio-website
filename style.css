@@ -208,7 +208,6 @@ body {
     border-radius: 30px;
     bottom: 50%;
     transform: translate(-50%, 50%);
-    overflow-y: auto;
   }
 
 #menu-check:checked + .menu-pill {
