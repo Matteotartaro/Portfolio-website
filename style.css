@@ -216,13 +216,13 @@ body {
 }
 
 
-
+/*
 @media (min-width: 576px) { 
   #menu-check:checked + .menu-pill {
     height: 55vh;
   }
 }
-
+*/
 
 @media (min-width: 900px) { 
   #menu-check:checked + .menu-pill {
