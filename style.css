@@ -229,11 +229,13 @@ body {
     height: 60vh;
   }
 }
+/*
 @media (min-width: 900px) { 
   #menu-check:checked + .menu-pill {
     height: 60vh;
   }
 }
+  */
 
 
     
