@@ -215,6 +215,12 @@ body {
   height: 50vh;
 }
 
+@media (max-width: 767px) {
+  #menu-check:checked + .menu-pill {
+    height: 50svh; /* meglio di 50vh su mobile */
+  }
+}
+
 
 /*
 @media (min-width: 576px) { 
