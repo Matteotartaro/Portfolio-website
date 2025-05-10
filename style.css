@@ -212,7 +212,7 @@ body {
   }
 
 #menu-check:checked + .menu-pill {
-  height: 72vh;
+  height: 50vh;
 }
 
 
@@ -223,13 +223,13 @@ body {
   }
 }
 */
-
+/*
 @media (min-width: 900px) { 
   #menu-check:checked + .menu-pill {
     height: 40vh;
   }
 }
-
++/
 /*
 @media (min-width: 900px) { 
   #menu-check:checked + .menu-pill {
