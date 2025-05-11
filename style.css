@@ -223,7 +223,7 @@ body {
 @media (max-width: 767px) {
   body.projects-page #menu-check:checked + .menu-pill,
   body.contacts-page #menu-check:checked + .menu-pill {
-    height: 53vh;
+    height: 80vh;
   }
 }
 
