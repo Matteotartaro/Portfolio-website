@@ -560,20 +560,28 @@ transform: scale(0.4);
 
 
 
-@font-face {
-  font-family: 'LinealVF';
-  src: url("fonts/LinealVF.woff2")
-    format('woff2'); }
 
-
-
-.chat-title {
-  font-family: 'LinealVF';
-  font-size: 15vw;
-  font-weight: 900;
+.breathe-animation-chat span {
+  font-family: "stinger-variable", sans-serif;
+  font-variation-settings: "wdth" 100, "wght" 400;
+  font-size: 9vw;
   color: #ff920d;
-  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  animation: letter-breathe 5s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.1s);
+  font-variation-settings: 'wght' 100;
 }
+
+@keyframes letter-breathe {
+  0%, 100% {
+    font-variation-settings: 'wght' 100;
+  }
+  50% {
+    font-variation-settings: 'wght' 900;
+  }
+}
+
 
 @media (min-width:756px){
   .chat-title {
