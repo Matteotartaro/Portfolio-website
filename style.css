@@ -338,7 +338,7 @@ body:not([class]) .welcome-text {
 
   @media (min-width: 1025px) {
     .container-intro {
-      min-width: 100vh; }
+      min-height: 100vh; }
     }
   
 
