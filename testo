@@ -1,1 +1,1 @@
-git add . && git commit -m "Test automazione" && git push origin master
+git add . && git commit -m "Descrizione della modifica" && git push origin master
