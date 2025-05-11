@@ -330,7 +330,6 @@ body:not([class]) .welcome-text {
     flex-direction: column;
     align-items: start; 
     justify-content: center; 
-    min-height: 100vh; 
     padding: 4rem 1rem;  
     text-align: start; 
     gap: 2rem;  
