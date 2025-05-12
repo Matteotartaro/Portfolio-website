@@ -568,9 +568,14 @@ transform: scale(0.4);
   color: #ff920d;
   text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.2);
   display: inline-block;
-  animation: letter-breathe 5s ease-in-out infinite;
-  animation-delay: calc(var(--i) * 0.1s);
+  animation: letter-breathe 4s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.3s);
   font-variation-settings: 'wght' 100;
+}
+
+.space {
+  width: 0.2em;
+  display: inline-block;
 }
 
 @keyframes letter-breathe {
