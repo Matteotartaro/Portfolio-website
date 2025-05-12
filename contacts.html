@@ -42,18 +42,7 @@
   })();
 </script>
 
-<script>
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); 
-
-    emailjs.sendForm('service_7nljpjg', 'template_fnoabjk', this)
-      .then(function() {
-        alert('Messaggio inviato con successo!');
-      }, function(error) {
-        alert('Errore: ' + JSON.stringify(error));
-      });
-  });
-</script>
+<script src="script.js"> </script>
 
 </head>
 <body class="contacts-page">
@@ -130,7 +119,7 @@
             <textarea class="form-control" rows="5" placeholder="Your Message" name="message" required></textarea>
           </div>
           <div class="text-end">
-            <button type="submit" class="submit-button">Send Message</button>
+            <button type="submit" class="submit-button" onclick="sendMail()">Send Message</button>
           </div>
         </form> 
         <div class="container text-center follow-container">
