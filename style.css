@@ -566,6 +566,7 @@ transform: scale(0.4);
   font-variation-settings: "wdth" 100, "wght" 400;
   font-size: 9vw;
   color: #ff920d;
+  letter-spacing: -0.2rem;
   text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.2);
   display: inline-block;
   animation: letter-breathe 4s ease-in-out infinite;
