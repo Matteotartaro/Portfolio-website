@@ -6,11 +6,13 @@ function sendMail () {
     };
 
     emailjs.send("service_7nljpjg", "template_fnoabjk", parms)
-        .then(function(response) {
-            alert("Email Sent!");
-            console.log("SUCCESS", response);
-        }, function(error) {
-            alert("Failed to send email.");
-            console.error("FAILED", error);
-        });
+    .then(function(response) {
+        alert("Email inviata!");
+        console.log("SUCCESS", response);
+    }, function(error) {
+        alert("Invio fallito.");
+        console.error("FAILED", error);
+    });
 }
+
+document.getElementById("contact-form").addEventListener("submit", sendMail);
