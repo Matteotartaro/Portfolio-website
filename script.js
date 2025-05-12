@@ -1,10 +1,16 @@
 function sendMail () {
     let parms = {
-        name: document.getElementsByName("name").value,
-        mail: document.getElementsByName("mail").value,
-        message: document.getElementsByName("message").value,
-    
-    }
-    emailjs.send("service_7nljpjg","template_fnoabjk",parms).then (alert("Email Sent!!"))
+        name: document.getElementById("name").value,
+        mail: document.getElementById("mail").value,
+        message: document.getElementById("message").value,
+    };
 
+    emailjs.send("service_7nljpjg", "template_fnoabjk", parms)
+        .then(function(response) {
+            alert("Email Sent!");
+            console.log("SUCCESS", response);
+        }, function(error) {
+            alert("Failed to send email.");
+            console.error("FAILED", error);
+        });
 }
