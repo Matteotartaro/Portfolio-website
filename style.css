@@ -554,7 +554,7 @@ transform: scale(0.4);
 
 
 .title-section {
-  padding: 1rem;
+  padding: 0rem;
   text-align: center;
 }
 
@@ -600,7 +600,7 @@ transform: scale(0.4);
 
 /* Sezione form */
 .form-section {
-  padding: 2rem;
+  padding: 0rem 2rem 2rem;
 }
 
 .form-container {
