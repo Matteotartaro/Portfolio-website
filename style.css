@@ -373,7 +373,7 @@ body:not([class]) .welcome-text {
   
   
   .breathe-animation span {
-    font-family: 'TheFont' sans-serif;
+    font-family: 'TheFont', sans-serif;
     font-size: 9vw;
     color: #ff920d;
     text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.2);
