@@ -17,9 +17,7 @@ body {
     display: block;
   }
   
-  /* Su schermi piccoli: mostra il video mobile e nascondi quello desktop 
-  max- to 1920
-  720-  */
+  /* Su schermi piccoli video mobile e nascondi quello desktop */
   @media screen and (max-width: 720px) {
     .video-desktop {
       display: none;
