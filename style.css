@@ -33,7 +33,7 @@
 }
 
 
-@media (max-width:767) { 
+@media (max-width:767px) { 
   .video {
     transform: translate(-50%, -50%) scale(1.2);
   }
