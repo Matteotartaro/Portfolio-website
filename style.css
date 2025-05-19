@@ -33,6 +33,14 @@
 }
 
 
+@media (max-width:767) { 
+  .video {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+}
+
+
 
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
