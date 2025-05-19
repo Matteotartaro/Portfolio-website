@@ -32,6 +32,14 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .video {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+
+
+
 
 
 
