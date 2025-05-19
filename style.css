@@ -38,6 +38,7 @@
 @media (min-width: 1200px) {
   .video {
     object-position: center 60%; /* Sposta il soggetto più in alto (cioè abbassa il video) */
+    transform: scale(0.8) !important;
   }
 }
 
