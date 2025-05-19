@@ -13,24 +13,35 @@
   overflow: hidden;
 }
 
-/* Video verticale responsive */
+/* Video centrato, con zoom su mobile */
 .video {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.2); /* Zoom mobile */
   object-fit: cover;
   width: auto;
   height: 100%;
+  object-position: center center;
+  transition: transform 0.4s ease-in-out;
 }
 
-/* Da tablet in su: il video riempie la larghezza, tagliando in alto e in basso */
+/* Tablet: riduce leggermente lo zoom */
 @media (min-width: 768px) {
   .video {
+    transform: translate(-50%, -50%) scale(1.05);
     width: 100%;
     height: auto;
   }
 }
+
+/* Desktop: zoom più lontano per ridurre il taglio */
+@media (min-width: 1200px) {
+  .video {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
 
 
 
