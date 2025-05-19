@@ -42,8 +42,8 @@
 
 @media (min-width:1200px) { 
   .video {
-    transform: translate(-50%, -50%) scale(3.5);
-    top: 65%;
+    transform: translate(-50%, -50%) scale(3);
+    top: 61%;
     object-fit: contain;
   }
 }
