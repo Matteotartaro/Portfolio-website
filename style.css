@@ -230,36 +230,6 @@
 
 
 
-
-/*
-@media (min-width: 576px) { 
-  #menu-check:checked + .menu-pill {
-    height: 55vh;
-  }
-}
-*/
-/*
-@media (min-width: 900px) { 
-  #menu-check:checked + .menu-pill {
-    height: 40vh;
-  }
-}
-+/
-/*
-@media (min-width: 900px) { 
-  #menu-check:checked + .menu-pill {
-    height: 60vh;
-  }
-}
-  */
-
-
-    
-
-
-
-
-
   
   /* pillola BIANCA e MENU BTN nascosti quando il menù è aperto */
   #menu-check:checked + .menu-pill .welcome-text,
