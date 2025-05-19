@@ -26,6 +26,12 @@
   transition: all 0.4s ease-in-out;
 }
 
+@media (min-width:1190px) {
+  .video {
+    transform: scale(1)
+  }
+}
+
 
 
 
