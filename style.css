@@ -1,11 +1,11 @@
-.body-index {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-  }
 
-  /* Contenitore a tutto schermo */
+
+.body-index {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 .video-container {
   position: relative;
   width: 100%;
@@ -13,36 +13,25 @@
   overflow: hidden;
 }
 
-/* Video centrato, con zoom su mobile */
 .video {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.2); /* Zoom mobile */
-  object-fit: cover;
-  width: auto;
+  transform: translate(-50%, -50%);
+  width: 100%;
   height: 100%;
-  object-position: center center;
-  transition: transform 0.4s ease-in-out;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.4s ease-in-out;
 }
 
-/* Tablet: riduce leggermente lo zoom */
-@media (min-width: 768px) {
-  .video {
-    transform: translate(-50%, -50%) scale(1.05);
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Desktop: zoom più lontano per ridurre il taglio */
+/* ✅ Desktop: mostra il video con margini laterali */
 @media (min-width: 1200px) {
   .video {
-    transform: translate(-50%, -50%) scale(0.9);
+    object-fit: contain;
+    background-color: black; /* utile per eventuali bande vuote */
   }
 }
-
-
 
 
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
