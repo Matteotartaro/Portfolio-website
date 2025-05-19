@@ -5,6 +5,8 @@
   padding: 0;
   height: 100%;
   overflow: hidden;
+  background-color: black; /* aiuta iOS a capire che è scuro */
+  color-scheme: dark; /* forza lo schema scuro */
 }
 
 .video-container {
