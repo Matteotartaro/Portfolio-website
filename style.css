@@ -25,6 +25,13 @@
   transition: all 0.4s ease-in-out;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .video {
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+
 
 
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
