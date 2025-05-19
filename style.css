@@ -26,11 +26,6 @@
   transition: all 0.4s ease-in-out;
 }
 
-@media (min-width: 530px) and (max-width: 1199px) {
-  .video {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
-}
 
 @media (min-width: 1200px) {
   .video {
