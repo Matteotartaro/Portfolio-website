@@ -994,3 +994,9 @@ text-decoration: underline;
   background: #ffffff;
   background: linear-gradient(0deg,rgba(255, 255, 255, 1) 7%, #ffb108 100%);
 }
+
+
+.emoji-img {
+  max-width: 190px;
+  height: auto;
+}
