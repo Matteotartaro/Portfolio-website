@@ -988,3 +988,47 @@ text-decoration: underline;
   background-color: rgba(255, 255, 255, 1);
 }
 
+
+
+
+
+
+
+.cv-page {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #e10808db;
+}
+
+.custom-section-cv {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.custom-box-cv {
+  background-color: #9d0bff;
+  border-radius: 20px;
+  box-shadow: 0px 34px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.box-title-cv {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.box-text-cv {
+  font-size: 1rem;
+  color: #444;
+}
+
+ul.box-text-cv {
+  padding-left: 1.2rem;
+}
+
+ul.box-text-cv li {
+  margin-bottom: 0.5rem;
+}
