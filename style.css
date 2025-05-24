@@ -33,7 +33,7 @@
 }
 
 
-@media (max-width:767px) { 
+@media (max-width:768px) { 
   .video {
     transform: translate(-50%, -50%) scale(1.2);
   }
@@ -231,13 +231,13 @@
   height: 53vh;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #menu-check:checked + .menu-pill {
     height: 77vh;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body.projects-page #menu-check:checked + .menu-pill,
   body.contacts-page #menu-check:checked + .menu-pill {
     height: 80vh;
