@@ -16,10 +16,11 @@
 <body class="cv-page" style="padding-bottom: 150px;">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-  <section class="info-section">
+  <main class="info-section">
     <div class="container custom-section my-5">
       <div class="row g-3">
 
+        <header>
         <div class="col-md-12">
           <div class="custom-box h-100 gradient-box">
             <div class="intro-me row g-3 align-items-center">
@@ -31,7 +32,7 @@
               
               <!-- Testo a destra, su 9 colonne (12 su mobile) -->
               <div class="col-md-9 col-12">
-                <h2 class="display-5 intro-title">Curriculum Vitae</h2>
+                <h1 class="display-5 intro-title">Curriculum Vitae</h1>
                 <p><strong>Name:</strong> Matteo Tartaro</p>
                 <p><strong>Age:</strong> 22</p>
                 <p><strong>Location:</strong> Italy</p>
@@ -40,9 +41,10 @@
             </div>
           </div>
         </div>
-        
+        </header>
 
-        <div class="col-md-6">
+
+        <section class="col-md-6">
           <div class="custom-box h-100">
             <h3 class="box-title">Education & Current Studies</h3>
 
@@ -61,10 +63,10 @@
             <h5 class="study-subtitle">UniNettuno University</h5>
             <p class="study-description">MOOC (Massive Open Online Courses) - <strong>Brand Design</strong></p>
           </div>
-        </div>
+        </section>
 
         <div class="col-md-6 d-flex flex-column justify-content-between gap-3">
-          <div class="custom-box">
+          <section class="custom-box">
             <h3 class="box-title">Skills I'm Improving</h3>
             <ul>
               <li>Search Engine Optimization (SEO)</li>
@@ -73,9 +75,9 @@
               <li>Prototyping with Figma</li>
               <li>Ai, Chat GPT and Prompt Engenering</li>
             </ul>
-          </div>
+          </section>
 
-          <div class="custom-box">
+          <section class="custom-box">
             <h3 class="box-title">Softwares I use</h3>
             <ul>
               <li>Figma</li>
@@ -83,10 +85,10 @@
               <li>Photoshop</li>
               <li>LottieLab</li>
             </ul>
-          </div>
+          </section>
         </div>
 
-        <div class="col-md-12">
+        <section class="col-md-12">
           <div class="custom-box h-100">
             <h3 class="box-title">What I'm passionated about</h3>
             <p class="study-description">
@@ -103,17 +105,21 @@
               <li>Work on full branding projects, from strategy to the creation of all visual assets a brand may need</li>
             </ul>
           </div>
-        </div>
+        </section>
 
         
-          
         <a href="projects/CV-Matteo.pdf" download class="btn-download cv-box align-items-center">Download PDF</a>
     
       
 
       </div>
     </div>
-  </section>
+  </main>
+
+
+
+
+  <nav>
 
   <input type="checkbox" id="menu-check" hidden>
   <div class="container menu-pill">
@@ -152,5 +158,10 @@
       </a>
     </div>
   </div>
+
+</nav>
+
+
+
 </body>
 </html>
