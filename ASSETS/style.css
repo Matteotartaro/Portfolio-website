@@ -231,7 +231,7 @@
   height: 53vh;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   #menu-check:checked + .menu-pill {
     height: 77vh;
   }
