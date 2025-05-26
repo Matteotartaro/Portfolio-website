@@ -230,12 +230,13 @@
 #menu-check:checked + .menu-pill {
   height: 53vh;
 }
-
+/*
 @media (max-width: 768px) {
   #menu-check:checked + .menu-pill {
     height: 77vh;
   }
 }
+*/
 
 @media (max-width: 768px) {
   body.projects-page #menu-check:checked + .menu-pill,
