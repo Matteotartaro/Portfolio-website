@@ -73,6 +73,7 @@
     gap: 20px;
     z-index: 3;
     transition: all 0.4s ease;
+    overflow: hidden;
   }
 
   @media (min-width: 768px) {
@@ -231,12 +232,31 @@
   height: 53vh;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-height: 768px) and (max-height: 1199px) {
   #menu-check:checked + .menu-pill {
     height: 77vh;
   }
 }
 
+
+#menu-check:checked + .menu-pill {
+  max-height: 90vh; 
+  overflow-y: auto;
+}
+
+.menu-pill::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+
+/*
+@media (min-width: 768px) and (max-width: 1199px) {
+  #menu-check:checked + .menu-pill {
+    height: 77vh;
+  }
+}
+*/
 /*
 @media (max-width: 768px) {
   body.projects-page #menu-check:checked + .menu-pill,
