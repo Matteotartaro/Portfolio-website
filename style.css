@@ -230,13 +230,13 @@
 #menu-check:checked + .menu-pill {
   height: 53vh;
 }
-/*
-@media (max-width: 768px) {
+
+@media (min-width: 768px) {
   #menu-check:checked + .menu-pill {
     height: 77vh;
   }
 }
-*/
+
 
 @media (max-width: 768px) {
   body.projects-page #menu-check:checked + .menu-pill,
@@ -519,13 +519,6 @@ transform: scale(1.04);
 transform: scale(0.4);
 }
 
-
-
-.btn-download{
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;  
-}
 
 
 
