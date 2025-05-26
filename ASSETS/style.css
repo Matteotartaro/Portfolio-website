@@ -478,6 +478,8 @@ position: absolute;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: #000;
   }
   
   .box-text {
