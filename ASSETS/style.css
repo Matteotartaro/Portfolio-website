@@ -84,7 +84,6 @@
     
 
   
-  /* Benvenuto e pulsante giallo visibili prima che il menù si apra */
   .welcome-text {
     font-weight: 700;
     font-size: 1rem;
@@ -92,13 +91,9 @@
     justify-content: start;
   }
 
-
-
-
   .menu-btn {
-    background: #ffffff;
-    background: linear-gradient(0deg,rgba(255, 255, 255, 1) 7%, #ffb108 100%);
-    color: rgb(0, 0, 0);
+    background: linear-gradient(0deg, #ffffff 7%, #ffb108 100%);
+    color: #000;
     border-radius: 999px;
     padding: 8px 16px;
     font-weight: 400;
@@ -110,29 +105,18 @@
     gap: 6px;
   }
 
-
-
   .menu-btn:hover {
-    color: #000000;
     font-weight: 600;
   }
-
-  
 
   .menu-btn .material-icons {
     transition: transform 0.3s ease;
   }
-  
 
   .menu-btn:hover .material-icons {
-    transform: rotate(-45deg); 
+    transform: rotate(-45deg);
   }
-  
- 
 
-
-
-  /* BOTTONE X */
   .close-btn {
     display: none;
     position: absolute;
@@ -147,25 +131,19 @@
     cursor: pointer;
   }
 
- .close-btn:hover {
+  .close-btn:hover {
     background-color: black;
     color: #ffaa00;
     font-weight: 600;
   }
 
-
-
-
-
-
-  /*BOTTONE BACK HOME*/
   .back-home-btn {
     position: absolute;
     bottom: 20px;
     left: 32px;
     z-index: 4;
   }
-  
+
   .back-home-btn .btn {
     border-radius: 999px;
     padding: 8px 16px;
@@ -173,31 +151,22 @@
     font-weight: 500;
     font-family: 'Inter', sans-serif;
   }
-  
 
   .back-home-btn .btn:hover {
     animation: pulse 0.3s ease-in-out;
   }
-  
+
   @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
   }
-  
 
-  
-  
-
-
-
-
-
-  /* Contenuto del menù (riga), inizialmente nascosto */
   .menu-content {
     display: none;
-    flex-basis: 100%;
-    margin-top: 50px;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 60px;
   }
 
   .menu-item-img {
@@ -205,94 +174,53 @@
     height: 70px;
     object-fit: cover;
   }
-  
+
   .menu-item-text {
     font-size: large;
     font-family: 'Inter', sans-serif;
   }
 
-
-
-
-
-
-  
-  /* APERTURA del menù (bianco) quando il checkbox è attivato */
   #menu-check:checked + .menu-pill {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     padding: 20px;
     border-radius: 30px;
+    position: fixed;
+    left: 50%;
     bottom: 50%;
     transform: translate(-50%, 50%);
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    min-height: auto;
+    height: auto;
+    max-height: 85vh;
+    width: 90vw;
+    overflow: hidden;
   }
 
-#menu-check:checked + .menu-pill {
-  height: 53vh;
-}
-
-@media (min-height: 768px) and (max-height: 1199px) {
-  #menu-check:checked + .menu-pill {
-    height: 77vh;
-  }
-}
-
-
-#menu-check:checked + .menu-pill {
-  max-height: 90vh; 
-  overflow-y: auto;
-}
-
-.menu-pill::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
-
-
-/*
-@media (min-width: 768px) and (max-width: 1199px) {
-  #menu-check:checked + .menu-pill {
-    height: 77vh;
-  }
-}
-*/
-/*
-@media (max-width: 768px) {
-  body.projects-page #menu-check:checked + .menu-pill,
-  body.contacts-page #menu-check:checked + .menu-pill {
-    height: 80vh;
-  }
-}
-
-*/
-
-  
-  /* pillola BIANCA e MENU BTN nascosti quando il menù è aperto */
   #menu-check:checked + .menu-pill .welcome-text,
   #menu-check:checked + .menu-pill .menu-btn {
     display: none;
   }
-  
-  /* Mostra la X quando il menù è aperto */
+
   #menu-check:checked + .menu-pill .close-btn {
     display: flex;
   }
-  
-  /* Contenuto del menù quando è aperto */
+
   #menu-check:checked + .menu-pill .menu-content {
-    display: block;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding-bottom: 60px; /* spazio per il bottone home */
   }
 
-
-  /*hovering RIGA menù*/
   .menu-item:hover {
     background-color: rgba(0, 0, 0, 0.07);
     font-weight: 900;
   }
-
-
-
 
 
 
