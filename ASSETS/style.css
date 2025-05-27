@@ -139,7 +139,7 @@
 
   .back-home-btn {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 32px;
     z-index: 4;
   }
@@ -196,7 +196,16 @@
     height: auto;
     max-height: 85vh;
     width: 90vw;
+    max-width: 600px;
     overflow: hidden;
+  }
+
+
+  @media (min-width: 768px) {
+    #menu-check:checked + .menu-pill {
+      max-width: 500px;
+      width: 80vw;
+    }
   }
 
   #menu-check:checked + .menu-pill .welcome-text,
