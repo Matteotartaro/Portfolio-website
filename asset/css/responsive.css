@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    .projects-section .project-card {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .projects-section .project-card img {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+  
+    .contacts-container {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  
+    .contacts-container .social-icons {
+      justify-content: flex-start;
+    }
+  }
+  

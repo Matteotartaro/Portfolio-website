@@ -1,0 +1,69 @@
+.menu {
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0;
+  }
+  
+  .menu li {
+    text-align: center;
+  }
+  
+  .menu-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 5px;
+    filter: invert(100%);
+  }
+  
+  .menu-text {
+    font-size: 12px;
+  }
+  
+  .menu-button {
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -25px;
+  }
+  
+  .menu-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .menu-pills {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .menu-pills a {
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+  }
+  

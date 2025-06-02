@@ -1,0 +1,56 @@
+.scroll-indicator {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.5;
+    animation: bounce 2s infinite;
+    margin-top: 10px;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .projects-section {
+    background-color: black;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .projects-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .project-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+  }
+  
+  .project-card img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .project-card .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
