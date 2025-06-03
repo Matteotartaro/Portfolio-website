@@ -9,16 +9,15 @@ Volevo mantenre uno stile semplice ma attraente, provando a sperimentare in molt
 Ho scelto uno stile leggero e ironico, con elementi creativi e dinamici che riflettono la mia personalità e il mio approccio al design.
 Le immagini 
 
-## 📁 Cosa contiene?
+## Cosa contiene?
 
-- **Homepage**: con animazione testuale ("breathe") e un layout responsive.
-- **About**: in stile blog anni 2000, con elementi nostalgici.
-- **Skills**: presentate con un tono autoironico e leggero.
-- **Projects**: una galleria di lavori con descrizione, immagini e link a PDF o articoli pubblicati.
-- **CV**: una pagina con layout coerente e ben strutturato.
-- **Menu personalizzato**: creato da me anche graficamente.
+- **Homepage**: 
+- **About**: con una bella  animazione breathe che ho creato seguendo una guida, uno stile semplice e una descrizione minima, che con il tempo si andrà ad ampliare.
+- **Projects**:la galleria dei progetti che ho creato seguendo il corso di Start2impact
+- **CV**: il mio cv che contiene studi, obbiettivi e competenze attuali
+- **Menu personalizzato**: un menù stticky presente in ogni pagina, comodo e flessibile per la navigazione nel sito.
 
-## 🧰 Tecnologie usate
+##  Tecnologie usate
 
 - HTML5
 - CSS3
@@ -27,13 +26,9 @@ Le immagini
 - Responsive design
 - (Solo codice statico, senza JavaScript)
 
-## 🌐 Come visualizzarlo?
+
+## Come visualizzarlo?
 
 Puoi vedere il sito online su GitHub Pages:
 
-➡️ [matteotartaro.github.io/portfolio](https://matteotartaro.github.io/portfolio)
-
-Oppure, clonando il repository:
-
-```bash
-git clone https://github.com/matteotartaro/portfolio.git
+[matteotartaro.github.io/portfolio](https://matteotartaro.github.io/portfolio)
