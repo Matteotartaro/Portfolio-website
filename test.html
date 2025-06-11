@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Toggle Test</title>
+ 
+  <style>
+    .switch-label {
+      width: 60px;
+      height: 60px;
+      background-color: #f0f0f0;
+      background-image: url('asset/foto/toggle-off.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+
+    #colorToggle:checked ~ .switch-label {
+      background-image: url('asset/foto/toggle-on.png');
+    }
+
+    #colorToggle:checked ~ .theme-wrapper {
+      background-color: black;
+      color: white;
+    }
+
+    .theme-wrapper {
+      padding: 20px;
+    }
+
+    .d-none {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="checkbox" id="colorToggle" class="d-none" />
+  <label for="colorToggle" class="switch-label"></label>
+
+  <div class="theme-wrapper">
+    <h1>Contenuto di prova</h1>
+  </div>
+
+</body>
+</html>
