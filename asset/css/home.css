@@ -97,11 +97,11 @@
     
     .shape1 {
       top: 10%;
-      left: -10%;
+      left: -30%;
       width: 15rem;
     }
     .shape2 {
-      bottom: 10%;
+      bottom: 5%;
       right: -10%;
       width: 10rem;
     }
@@ -112,12 +112,12 @@
     }
 
     .shape4 {
-      bottom: -10%;
-      left: -20%;
+      bottom: -20%;
+      left: -30%;
       width: 20rem;
     }
     .shape5 {
-      top: 25%;
+      top: 12%;
       left: 85%;
       width: 13rem;
     }
