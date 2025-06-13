@@ -47,7 +47,7 @@
 
 /* Testi header */
 .intro-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .intro-text-study {
   font-size: 2rem;
@@ -55,7 +55,7 @@
 }
 
 .intro-text-bio {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .intro-study {
@@ -71,7 +71,7 @@
 
 .matteo-svg {
   color: rgb(255, 98, 0);
-  width: 14rem;
+  width: 12rem;
 }
 .star {
   padding-bottom: 2rem;
@@ -101,28 +101,28 @@
     .shape1 {
       top: 10%;
       left: -30%;
-      width: 15rem;
+      width: 12rem;
     }
     .shape2 {
       bottom: 5%;
       right: -10%;
-      width: 10rem;
+      width: 9rem;
     }
     .shape3 {
       top: -15%;
       right: 10%;
-      width: 15rem;
+      width: 12rem;
     }
 
     .shape4 {
       bottom: -20%;
       left: -30%;
-      width: 20rem;
+      width: 18rem;
     }
     .shape5 {
       top: 12%;
       left: 85%;
-      width: 13rem;
+      width: 11rem;
     }
     
 
