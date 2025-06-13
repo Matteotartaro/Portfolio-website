@@ -17,7 +17,7 @@
    justify-content: space-between;
    align-items: center;
    gap: 20px;
-   z-index: 3;
+   z-index: 1000;
    transition: all 0.4s ease;
    overflow: hidden;
  }
@@ -157,7 +157,3 @@
    background-color: rgba(0, 0, 0, 0.07);
    font-weight: 900;
  }
-
- #wrapper #menu-check:checked ~ .switch-label {
-  display: none;
-}
