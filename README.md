@@ -11,7 +11,7 @@ Le immagini
 
 ## Cosa contiene?
 
-- **Homepage**: 
+- **Homepage**: La home, per ora molto semplice, che in futuro conterrà in primo piano progetti che esprimano un mio stile personale, contiene una piccola descrizione anche questa che in futuro cambierà con l'acquisizione di competene più specifiche; Ho agiunto un interuttore per cambiare il tema della pagina aggiungendo una cosa simpatica e dinamica.
 - **About**: con una bella  animazione breathe che ho creato seguendo una guida, uno stile semplice e una descrizione minima, che con il tempo si andrà ad ampliare.
 - **Projects**:la galleria dei progetti che ho creato seguendo il corso di Start2impact
 - **CV**: il mio cv che contiene studi, obbiettivi e competenze attuali
