@@ -157,3 +157,7 @@
    background-color: rgba(0, 0, 0, 0.07);
    font-weight: 900;
  }
+
+ #menu-check:checked ~ .switch-label {
+    display: none;
+  }
