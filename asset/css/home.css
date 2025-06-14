@@ -159,7 +159,7 @@
 /* Switch */
 .switch-label {
   cursor: pointer;
-  z-index: -1000;
+  z-index: 500;
   width: 70px;
   height: 70px;
   padding: 8px;
