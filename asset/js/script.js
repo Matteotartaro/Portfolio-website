@@ -26,3 +26,10 @@ function sendMail(event) {
     }
   });
   
+
+
+
+  type="text/javascript">
+  (function(){
+    emailjs.init("hfTNmDMdOVk-Z91ff"); 
+  })();
