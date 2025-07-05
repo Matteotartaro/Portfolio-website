@@ -5,3 +5,5 @@ I collegamenti hanno ora tutti _blank e noopener.
 Per quanto riguarda l'utilizzo di un preprocessore di css appunto per ridurre il codice css stesso, non avedolo usato fin dall'inizio come prassi di scrittura di codice, 
 utilizzarlo adesso nella sua applicazione più completa richiederebbe di modificare tutto il codice css che tratandosi di circa 1000 righe credo sia un passaggio controproduttivo.
 ho comunque applicato less, come da requisiti del progetto, nei file css utilizzando qualche nesting e qualche variabile ma che appunto hanno diminutito il codice in termini minimi.
+
+Grazie dell'attenzione
