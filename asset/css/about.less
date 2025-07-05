@@ -1,46 +1,63 @@
 /*  Variabili   */
+@color-black: #000;
+@color-white: #fff;
+@color-orange: #ff920d;
+@color-yellow-hover: #ffb300;
+@box-radius: 20px;
+@shadow-box: rgba(0, 0, 0, 0.1);
+@cv-shadow: rgba(247, 72, 72, 0.4);
+@cv-gradient: linear-gradient(-45deg, #FA4700, #FFBB00, #eab15c, #FA4700, #FFBB00, #efb153, #FA4700);
+
 /*  HOME PAGE  */
-body:not([class]) .welcome-text {
-  display: block;
+body:not([class]) {
+  .welcome-text {
+    display: block;
+  }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
-  .video {
+
+.video {
+  @media (min-width: 768px) and (max-width: 1199px) {
     transform: translate(-50%, -50%) scale(1.08);
   }
-}
-@media (max-width: 768px) {
-  .video {
+
+  @media (max-width: 768px) {
     transform: translate(-50%, -50%) scale(1.2);
   }
-}
-@media (min-width: 1200px) {
-  .video {
+
+  @media (min-width: 1200px) {
     transform: translate(-50%, -50%) scale(3);
     top: 61%;
     object-fit: contain;
   }
 }
+
 body[class] {
   overflow: scroll;
 }
+
 .about-page {
-  background-color: #fff;
+  background-color: @color-white;
 }
+
 /*  INTRO SECTION  */
 .intro-title {
   font-weight: 600;
 }
+
 .intro-me {
-  color: #000;
+  color: @color-black;
 }
+
 .link-start2 {
-  color: #000;
+  color: @color-black;
   font-style: italic;
+
+  &:hover {
+    color: @color-yellow-hover;
+    text-decoration: underline !important;
+  }
 }
-.link-start2:hover {
-  color: #ffb300;
-  text-decoration: underline !important;
-}
+
 .container-intro {
   display: flex;
   flex-direction: column;
@@ -49,44 +66,50 @@ body[class] {
   padding: 2rem 1rem;
   text-align: start;
   gap: 2rem;
-}
-@media (min-width: 1025px) {
-  .container-intro {
+
+  @media (min-width: 1025px) {
     min-height: 100vh;
     padding: 4rem 1rem;
   }
 }
+
 /*  BREATHE ANIMATION  */
 div.breathe-animation {
   display: flex;
   align-items: center;
 }
+
 @font-face {
   font-family: 'TheFont';
   src: url("https://garet.typeforward.com/assets/fonts/shared/TFMixVF.woff2") format('woff2');
 }
-.breathe-animation span {
-  font-family: 'TheFont';
-  font-size: 9vw;
-  color: #ff920d;
-  text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.2);
-  text-align: start;
-  animation: letter-breathe 3s ease-in-out infinite;
-}
-@media (max-width: 756px) {
-  .breathe-animation span {
-    font-size: 15vw;
+
+.breathe-animation {
+  span {
+    font-family: 'TheFont';
+    font-size: 9vw;
+    color: @color-orange;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.2);
+    text-align: start;
+    animation: letter-breathe 3s ease-in-out infinite;
+
+    @media (max-width: 756px) {
+      font-size: 15vw;
+    }
   }
 }
+
 @keyframes letter-breathe {
   from,
   to {
     font-variation-settings: 'wght' 100;
   }
+
   50% {
     font-variation-settings: 'wght' 900;
   }
 }
+
 /*  ROTATING TEXT  */
 .rotating-text {
   width: 200px;
@@ -97,19 +120,20 @@ div.breathe-animation {
   bottom: -30px;
   left: -10px;
   z-index: -2;
-}
-@media (min-width: 768px) {
-  .rotating-text {
+
+  @media (min-width: 768px) {
     width: 450px;
     height: 450px;
     bottom: -200px;
     position: absolute;
   }
 }
+
 .lets-create-text {
   font-size: 44px;
-  fill: #ff920d;
+  fill: @color-orange;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -118,55 +142,65 @@ div.breathe-animation {
     transform: rotate(360deg);
   }
 }
+
 /*  BOX GENERICO  */
 .custom-section {
   width: 80%;
   margin: 0 auto;
 }
+
 .custom-box {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0px 34px 30px rgba(0, 0, 0, 0.1);
+  background-color: @color-white;
+  border-radius: @box-radius;
+  box-shadow: 0px 34px 30px @shadow-box;
   padding: 2rem;
   height: fit-content;
 }
+
 .box-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
   text-decoration: none;
-  color: #000;
+  color: @color-black;
 }
+
 .box-text {
   font-size: 1rem;
   color: #444;
 }
+
 .box-image {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 10px;
 }
+
 /*  CV BOX  */
 .cv-box {
-  border-radius: 20px;
+  border-radius: @box-radius;
   padding: 2rem;
   height: 100%;
-  background: linear-gradient(-45deg, #FA4700, #FFBB00, #eab15c, #FA4700, #FFBB00, #efb153, #FA4700);
+  background: @cv-gradient;
   background-size: 600% 600%;
   animation: gradientmove 8s ease infinite;
-  box-shadow: 0px 6px 20px rgba(247, 72, 72, 0.4);
+  box-shadow: 0px 6px 20px @cv-shadow;
+
+  &:hover {
+    transform: scale(1.04);
+  }
 }
-.cv-box:hover {
-  transform: scale(1.04);
-}
+
 .cv-button:active {
   transform: scale(0.4);
 }
+
 .cv-button-link {
   text-decoration: none;
   color: inherit;
 }
+
 @keyframes gradientmove {
   0% {
     background-position: 0% 50%;
