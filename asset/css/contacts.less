@@ -120,6 +120,29 @@
   }
 }
 
+
+.social-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;             // occupa tutta la colonna
+  aspect-ratio: 1 / 1;     // rende la card quadrata
+  background: rgba(148, 148, 148, 0.3);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-radius: @box-radius-lg;
+  text-decoration: none;    // rimuove sottolineatura
+  color: @color-black;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: rgb(255, 205, 144);
+    transform: translateY(-5px);
+  }
+}
+
 /*  SOCIAL SECTION  */
 .social-section {
   overflow: hidden;
@@ -137,29 +160,6 @@
     font-size: 2rem;
     font-weight: bold;
     color: @color-black;
-  }
-
-  
-  .social-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;             // occupa tutta la colonna
-    aspect-ratio: 1 / 1;     // rende la card quadrata
-    background: rgba(148, 148, 148, 0.3);
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-    border-radius: @box-radius-lg;
-    text-decoration: none;    // rimuove sottolineatura
-    color: @color-black;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  
-    &:hover {
-      background-color: rgb(255, 205, 144);
-      transform: translateY(-5px);
-    }
   }
 
 
