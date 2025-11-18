@@ -178,12 +178,15 @@ div.breathe-animation {
     background-position: 0% 50%;
   }
 }
+
+
 /* Software icons grid */
 .softwares-box {
   padding: 2rem;
 }
 .software-item {
   width: 100px;
+  /* regola tu */
   text-align: center;
 }
 .software-icon {
