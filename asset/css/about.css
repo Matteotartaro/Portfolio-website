@@ -178,5 +178,26 @@ div.breathe-animation {
     background-position: 0% 50%;
   }
 }
-
-
+/* Software icons grid */
+.softwares-box {
+  padding: 2rem;
+}
+.software-item {
+  width: 100px;
+  /* regola tu */
+  text-align: center;
+}
+.software-icon {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.software-label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #000;
+}
